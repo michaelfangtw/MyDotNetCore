@@ -41,6 +41,37 @@ namespace ConsoleApplication
             //    After assigning a Int32 value, the Decimal value is -1034000.
             //    After assigning a Int64 value, the Decimal value is 1152921504606846976.
             //    After assigning a Int64 value, the Decimal value is 18446744073709551615.
+
+            Class2 c = new Class2();
+            //改成呼叫c.PreTest()
+            c.PreTest();//出現的是Class2.Test()
+         }
+    }
+
+    public class Class1
+    {
+        //多加一個方法
+        public void PreTest()
+        {
+            Console.WriteLine("PreTest()");
+            Test();
+        }
+        //virtual for child to new or override
+        public virtual void Test()
+        {
+            Console.WriteLine("virtual Class1.Test(), child new another Test() ");
         }
     }
+
+    public class Class2 : Class1
+    {
+        //使用override  蓋新房:public overrid void Test()
+        //使用new,      兩棟都在:public new void Test()
+        public new void Test()
+        {
+            Console.WriteLine("override Class2.Test()");
+        }
+
+    }
+
 }
