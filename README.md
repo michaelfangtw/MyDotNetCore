@@ -1,12 +1,12 @@
 
-MyWPFDemo
+MyDotNetCore
 -----
 This is a DotNet Core Demo<br>
 
 Installation
 ------------
 ```
-git clone MySingletonMultiDatabase https://github.com/michaelfangtw/MyDotNetCore.git
+git clone MyDotNetCore https://github.com/michaelfangtw/MyDotNetCore.git
 ```
 
 Git Notes
@@ -18,7 +18,6 @@ git init
 git add .
 git status
 git commit -m "first commit"
-rem MyWPFDemo
 git remote add origin https://github.com/michaelfangtw/MyDotNetCore.git
 rem origin =remote repos
 rem master =local repos
